@@ -1,18 +1,21 @@
+/* Définition des variables CSS pour les couleurs */
 :root {
-  --primary-color: rgb(15, 102, 232);
-  --text-color: white;
+  --primary-color: rgb(15, 102, 232); /* Couleur primaire utilisée dans le design */
+  --text-color: white; /* Couleur du texte utilisée dans le design */
 }
 
+/* Réinitialisation des marges, paddings et box-sizing pour tous les éléments */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  margin: 0; /* Enlever les marges par défaut */
+  padding: 0; /* Enlever les paddings par défaut */
+  box-sizing: border-box; /* Inclure les bordures et le padding dans la taille totale des éléments */
 }
 
+/* Styles pour le corps de la page */
 body {
-  background-color: #28282c;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background-color: #28282c; /* Définir la couleur de fond */
+  min-height: 100vh; /* Définir une hauteur minimale de 100% de la hauteur de la fenêtre */
+  display: flex; /* Utiliser un modèle de boîte flexible */
+  justify-content: center; /* Centrer le contenu horizontalement */
+  align-items: center; /* Centrer le contenu verticalement */
 }
