@@ -1,61 +1,71 @@
+/* Importer une police Google Fonts spécifique */
 @import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,0,0");
 
+/* Styles pour la barre de recherche */
 .searchBar {
-  display: flex;
-  flex-direction: column;
-  position: relative;
+  display: flex; /* Utiliser un modèle de boîte flexible */
+  flex-direction: column; /* Disposer les éléments en colonne */
+  position: relative; /* Positionner l'élément relativement à sa position normale */
 }
 
+/* Styles pour les boutons dans la barre de recherche */
 .searchBar button {
-  border: none;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--primary-color);
+  border: none; /* Enlever la bordure */
+  cursor: pointer; /* Changer le curseur pour indiquer que c'est cliquable */
+  display: flex; /* Utiliser un modèle de boîte flexible */
+  justify-content: center; /* Centrer le contenu horizontalement */
+  align-items: center; /* Centrer le contenu verticalement */
+  background-color: var(--primary-color); /* Utiliser la couleur primaire définie */
 }
 
+/* Styles pour le conteneur de l'input de recherche */
 .searchBar .inputSearch {
-  display: flex;
-  border-radius: 5px;
-  overflow: hidden;
+  display: flex; /* Utiliser un modèle de boîte flexible */
+  border-radius: 5px; /* Arrondir les coins */
+  overflow: hidden; /* Cacher tout débordement */
 }
 
+/* Styles pour l'input de recherche */
 .inputSearch input {
-  font-size: 2rem;
-  color: var(--text-color);
-  border: none;
-  background-color: #1c1c1d;
-  display: flex;
-  padding: 1rem;
+  font-size: 2rem; /* Définir la taille de la police */
+  color: var(--text-color); /* Utiliser la couleur du texte définie */
+  border: none; /* Enlever la bordure */
+  background-color: #1c1c1d; /* Définir la couleur de fond */
+  display: flex; /* Utiliser un modèle de boîte flexible */
+  padding: 1rem; /* Ajouter du padding autour du texte */
 }
 
+/* Enlever le contour lorsque l'input est en focus */
 .inputSearch input:focus {
   outline: none;
 }
 
+/* Styles pour la liste des résultats de recherche */
 .searchBar ul {
-  width: 100%;
-  list-style: none;
-  background-color: #1c1c1d;
-  border-radius: 5px;
-  font-size: 2rem;
-  color: var(--text-color);
-  overflow: hidden;
-  position: absolute;
-  top: 5rem;
+  width: 100%; /* La liste prend toute la largeur du parent */
+  list-style: none; /* Enlever les puces des listes */
+  background-color: #1c1c1d; /* Définir la couleur de fond */
+  border-radius: 5px; /* Arrondir les coins */
+  font-size: 2rem; /* Définir la taille de la police */
+  color: var(--text-color); /* Utiliser la couleur du texte définie */
+  overflow: hidden; /* Cacher tout débordement */
+  position: absolute; /* Positionner l'élément absolument par rapport au parent */
+  top: 5rem; /* Déplacer la liste vers le bas */
 }
 
+/* Styles pour les éléments de la liste des résultats de recherche */
 .searchBar ul li {
-  padding: 1rem;
-  cursor: pointer;
+  padding: 1rem; /* Ajouter du padding autour du texte */
+  cursor: pointer; /* Changer le curseur pour indiquer que c'est cliquable */
 }
 
+/* Changer la couleur de fond lorsque l'élément de la liste est survolé */
 .searchBar ul li:hover {
-  background-color: var(--primary-color);
+  background-color: var(--primary-color); /* Utiliser la couleur primaire définie */
 }
 
+/* Styles pour le texte ou les icônes dans l'input de recherche */
 .inputSearch span {
-  color: var(--text-color);
-  padding: 1rem 2rem;
+  color: var(--text-color); /* Utiliser la couleur du texte définie */
+  padding: 1rem 2rem; /* Ajouter du padding autour du texte */
 }
